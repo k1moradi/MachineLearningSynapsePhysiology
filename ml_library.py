@@ -249,7 +249,7 @@ def build_model(
         opt = tfa.optimizers.SGDW(learning_rate=learning_rate, weight_decay=L2_weight)
     elif optimizer is 'ADAM':
         opt = optimizers.Adam(learning_rate=learning_rate, beta_1=0.89, epsilon=2.5e-07)
-    elif optimizer is 'SDG':
+    elif optimizer is 'SGD':
         opt = optimizers.SGD(learning_rate=learning_rate)
     else:
         opt = tfa.optimizers.extend_with_decoupled_weight_decay(optimizers.Nadam)(
