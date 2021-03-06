@@ -1,4 +1,4 @@
-# A library to make deep learning or random forest model of synaptic physiology
+# A library to make deep learning or random forest models of synaptic physiology
 I designed this library as part of my Ph.D. project. It is around a thousand lines of Python code and based on TensorFlow and Scikit-Learn. It allows quick testing of the latest machine learning technologies to make a predictive model of synapses, and test the predictive power of models.
 
 ## Dependencies
