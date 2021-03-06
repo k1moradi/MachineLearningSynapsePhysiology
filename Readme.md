@@ -29,13 +29,7 @@ The main function is assess_model.
 |train_targets_filename |None|data targets: five synaptic parameters g, tau_d, tau_r, tau_f, and U. NA values should be replaced with zero already.|
 |predict_data_startswith|None|Any number of files containing prediction features. The columns of features should be identical to the training features. Each row should be one potential connection.|
 |potential_connections_df|None|A DataFrame containing the list of potential connections. Each row is linked to prediction feature data files.|
-|numerical_columns|[
-    'Slice_Thickness', 'ISI', 'Temperature', 'Vm', 'Erev_GABA_B', 'Erev_NMDA',
-    'Erev_GABA_A', 'Erev_AMPA', 'Cai', 'Cao', 'Cli', 'Clo', 'Csi', 'H2PO4o',
-    'HCO3i', 'HCO3o', 'HEPESi', 'Ki', 'Ko', 'Mgi', 'Mgo', 'Nai', 'Nao', 'Bri',
-    'gluconatei', 'QX314i', 'ATPi', 'EGTAi', 'EGTAo', 'GTPi', 'OHi', 'SO4i',
-    'SO4o', 'phosphocreatinei', 'methanesulfonatei', 'acetatei', 'methylsulfatei',
-    'NMDGi', 'Trisi', 'CeSO4i', 'pyruvateo', 'TEAi', 'Bao', 'HPO4o', 'Age']| List of feature columns that need normalization.|
+|numerical_columns|['Slice_Thickness', 'ISI', 'Temperature', 'Vm', 'Erev_GABA_B', 'Erev_NMDA', 'Erev_GABA_A', 'Erev_AMPA', 'Cai', 'Cao', 'Cli', 'Clo', 'Csi', 'H2PO4o', 'HCO3i', 'HCO3o', 'HEPESi', 'Ki', 'Ko', 'Mgi', 'Mgo', 'Nai', 'Nao', 'Bri', 'gluconatei', 'QX314i', 'ATPi', 'EGTAi', 'EGTAo', 'GTPi', 'OHi', 'SO4i', 'SO4o', 'phosphocreatinei', 'methanesulfonatei', 'acetatei', 'methylsulfatei', 'NMDGi', 'Trisi', 'CeSO4i', 'pyruvateo', 'TEAi', 'Bao', 'HPO4o', 'Age']| List of feature columns that need normalization.|
 |passage_num|1|the number of times NA values are replaced with the interpolations. Is used just for naming the folders for convenience.|
 |complete_stp|True|interpolate the NA values by changing zero ISIs to the mode of the non-zero ISIs in the training data.|
 |isi_column_name|'ISI'|the name of feature column that contains ISI values.|
@@ -54,7 +48,7 @@ The main function is assess_model.
 |batch_normalization|True|Enables batch_normalization. Works better if large batch sizes are used.|
 |noise|0.2|By default adds 20% Gaussian noise after the input layer and noise/4=5% after the output layer.|
 |L1_weight|None|L1 regularization weight.|
-L2_weight|1e-3|L2 regularization weight.|
+|L2_weight|1e-3|L2 regularization weight.|
 |min_weight|None|minimum allowed weight between nodes of the network.|
 |max_weight|1.0|maximum allowed weight between nodes of the network.|
 |batch_size|2621|Training batch size. The larger batches train faster. The prediction power of the models with the largest batch sizes in the case of synapses.|
