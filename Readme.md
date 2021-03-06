@@ -18,7 +18,7 @@ I designed this library as part of my Ph.D. project. It is around a thousand lin
 |plotly|4.9.0|
 |plotly-orca|1.3.0|
 
-On Linux "xvfb" package (Virtual Framebuffer 'fake' X server) is needed as well for plotly to function.
+On Linux "xvfb" package (Virtual Framebuffer 'fake' X server) may needed as well for plotly to function.
 
 ## Users Manual
 Check [Readme.ipynb](https://github.com/k1moradi/MachineLearningSynapsePhysiology/blob/main/Readme.ipynb) for a quick start guide.
