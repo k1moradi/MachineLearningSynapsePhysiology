@@ -70,6 +70,6 @@ The main function is assess_model.
 |maape_goal|27|accuracy goal like loss goal|
 |ob_threshold|100|how many out of bound predictions are allowed.|
 |skip|200|skip epochs while plotting the training curves.|
-|never_stop|False|used while retaining models from a source folder. If no other model remains in the folder continue checking the folder.|
+|never_stop|False|used while retraining models from a source folder. If no other model remains in the folder continue checking the folder.|
 |save_models|False|save the trained model at the end.|
 |verbose|0|if set to one more training log being generated.|
