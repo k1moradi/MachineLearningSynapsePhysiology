@@ -56,7 +56,7 @@ The main function is assess_model.
 |batch_size|2621|Training batch size. Using large batch_sizes leads to a faster training speed. The prediction power of the models trained with large batch sizes was also better in the case of synapses.|
 |num_epochs|9999|maximum number of training epochs after which training ends.|
 |repetitions|4|number of times convergence of the model is being tested by checking if the model has reached the goal values also by checking the bio-plausibility of the predictions|
-|optimizer|'ADAMW'|The name of the optimizer. Supported methods: 'ADAMW', 'SGDW', 'ADAM', and 'SDG'. The default method worked the best in our tests.|
+|optimizer|'ADAMW'|The name of the optimizer. Supported methods: 'ADAMW', 'SGDW', 'ADAM', and 'SGD'. The default method worked the best in our tests.|
 |lookahead|True|A secondary optimizer that controls the training. Slightly improved the results in our tests.|
 |learning_rate|0.015|Learning rate of the optimizer. Large values speed up the training.|
 |LROPpatience|100|If training did not improve after this number of epochs reduce the learning rate by a factor.|
