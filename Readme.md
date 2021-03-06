@@ -72,4 +72,4 @@ The main function is assess_model.
 |skip|200|skip epochs while plotting the training curves.|
 |never_stop|False|used while retraining models from a source folder. If no other model remains in the folder continue checking the folder.|
 |save_models|False|save the trained model at the end.|
-|verbose|0|if set to one more training log being generated.|
+|verbose|0|if set to one, more training logs would be generated.|
