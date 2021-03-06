@@ -61,8 +61,7 @@ The main function is assess_model.
 |learning_rate|0.015|Learning rate of the optimizer. Large values speed up the training.|
 |LROPpatience|100|If training did not improve after this number of epochs reduce the learning rate by a factor.|
 |LROPfactor|0.9|Learning rate reduction factor. The new learning_rate = previous learning_rate times LROPfactor.|
-|loss|'SMAPE'|The loss function that computes the model error. Supported functions: 'MAPE' (mean absolute percentage error), 'MLAPE' (mean log1p absolute percentage error), 'MSLAPE' (mean squared log1p absolute percentage error), 'SMAAPE' (mean arctan absolute percentage error), 'ML1APE' (mean soft_l1 absolute percentage error), and 'MSLE' (
-mean squared logarithmic error).|
+|loss|'SMAPE'|The loss function that computes the model error. Supported functions: 'MAPE' (mean absolute percentage error), 'MLAPE' (mean log1p absolute percentage error), 'MSLAPE' (mean squared log1p absolute percentage error), 'SMAAPE' (mean arctan absolute percentage error), 'ML1APE' (mean soft_l1 absolute percentage error), and 'MSLE' (mean squared logarithmic error).|
 |loss_threshold|29|Loss threshold after which bio-plausibility is being tested.|
 |loss_goal|29|Loss goal after which training is being stopped.|
 |negative_penalty_coef|0.0|experimentally penalizes negative predictions if MSLE is being used as a loss function and the output layer activation is non-sigmoid.|
