@@ -21,6 +21,8 @@ I designed this library as part of my Ph.D. project. It is around a thousand lin
 On Linux "xvfb" package (Virtual Framebuffer 'fake' X server) is needed as well for plotly to function.
 
 ## Users Manual
+Check [Readme.ipynb](https://github.com/k1moradi/MachineLearningSynapsePhysiology/blob/main/Readme.ipynb) for a quick start guide.
+
 The main function is assess_model.
 
 |function parameter|default value|description|
