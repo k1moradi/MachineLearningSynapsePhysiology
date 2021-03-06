@@ -53,7 +53,7 @@ The main function is assess_model.
 |L2_weight|1e-3|L2 regularization weight.|
 |min_weight|None|minimum allowed weight between nodes of the network.|
 |max_weight|1.0|maximum allowed weight between nodes of the network.|
-|batch_size|2621|Training batch size. The larger batches train faster. The prediction power of the models with the largest batch sizes in the case of synapses.|
+|batch_size|2621|Training batch size. The larger batches train faster. The prediction power of the models trained with the largest batch sizes was beter in the case of synapses.|
 |num_epochs|9999|maximum number of training epochs after which training ends.|
 |repetitions|4|number of times convergence of the model is being tested by checking if the model has reached the goal values also by checking the bio-plausibility of the predictions|
 |optimizer|'ADAMW'|The name of the optimizer. Supported methods: 'ADAMW', 'SGDW', 'ADAM', and 'SDG'. The default method worked the best in our tests.|
